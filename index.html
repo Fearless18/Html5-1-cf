@@ -20,9 +20,28 @@
 	<section>
 		<article>
 			<h2>Este es el Article, texto principal</h2>
+			<hgroup>
+				<h4> &lt;hgroup&gt; Agrupa etiquetas H1, h2, h3, etc, </h4><h5>para que los buscadores la tomen como una sola.</h5>
+
+				<h2>Canvas</h2>
+			</hgroup>
+			<canvas id="miCanvas" width="300" height="200">Tu navegador no soporta Canvas</canvas>
+			<script type="text/javascript" charset="utf-8">
+					var canvas = document.getElementById('miCanvas');
+					var ctx = canvas.getContext("2d");
+					ctx.beginPath();
+					ctx.arc(95,50,40,0,2*Math.PI);
+					ctx.stroke();
+
+	</script>
 		</article>
 		<aside>
-			textos secundarios
+			<h2>textos secundarios</h2>
+			Audio
+			<audio controls="controls" autoplay="autoplay" loop="loop" ><!-- preload="" auto, metadata, none -->
+				<source src="song.mp3" type="audio/mp3"/> <!-- IE / Safari -->
+				<source src="song.ogg" type="audio/ogg"/> <!-- Chrome, FF, Opera -->
+			</audio>
 		</aside>
 	</section>
 	
