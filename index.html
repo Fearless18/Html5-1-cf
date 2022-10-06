@@ -32,16 +32,37 @@
 					ctx.beginPath();
 					ctx.arc(95,50,40,0,2*Math.PI);
 					ctx.stroke();
-
-	</script>
+			</script>
+			Datalist
+			<input list="bandas">
+			<datalist id="bandas">
+				<option>Bryan Adams</option>
+				<option value="Bon Jovi"/>
+				<option>Aerosmith</option>
+			</datalist> <!-- No funciona en IE -->
+			<details>
+				<summary>Clase 12</summary>
+				Vemos la etiqueta Details
+			</details>
+			<p>La etiqueta Mark para <mark>resaltar texto</mark> remarcándolo</p>
+			<p>La etiqueta Mark para <mark style="background-color: red;">resaltar texto</mark> remarcándolo</p>
 		</article>
 		<aside>
 			<h2>textos secundarios</h2>
-			Audio
+			<p>Acá usamos Figure <figure>
+				<img src="imagenes/cubo.png"/>
+				<figcaption>Cubo pixeleado.</figcaption>
+			</figure> y también el figcaption para describirla.
+			</p>
+		</br>
+
+
+			<p>Audio
 			<audio controls="controls" autoplay="autoplay" loop="loop" ><!-- preload="" auto, metadata, none -->
 				<source src="song.mp3" type="audio/mp3"/> <!-- IE / Safari -->
 				<source src="song.ogg" type="audio/ogg"/> <!-- Chrome, FF, Opera -->
 			</audio>
+			</p>
 		</aside>
 	</section>
 	
