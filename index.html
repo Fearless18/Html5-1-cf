@@ -20,11 +20,12 @@
 	<section>
 		<article>
 			<h2>Este es el Article, texto principal</h2>
-			<hgroup>
+
+			<hgroup>				<!-- HGROUP -->
 				<h4> &lt;hgroup&gt; Agrupa etiquetas H1, h2, h3, etc, </h4><h5>para que los buscadores la tomen como una sola.</h5>
 
 				<h2>Canvas</h2>
-			</hgroup>
+			</hgroup> 				<!-- CANVAS -->
 			<canvas id="miCanvas" width="300" height="200">Tu navegador no soporta Canvas</canvas>
 			<script type="text/javascript" charset="utf-8">
 					var canvas = document.getElementById('miCanvas');
@@ -33,31 +34,72 @@
 					ctx.arc(95,50,40,0,2*Math.PI);
 					ctx.stroke();
 			</script>
-			Datalist
+
+			Datalist 				<!-- DATALIST -->
 			<input list="bandas">
 			<datalist id="bandas">
 				<option>Bryan Adams</option>
 				<option value="Bon Jovi"/>
 				<option>Aerosmith</option>
 			</datalist> <!-- No funciona en IE -->
-			<details>
+
+
+			<details>				<!-- DETAILS -->
 				<summary>Clase 12</summary>
 				Vemos la etiqueta Details
 			</details>
+									<!-- MARK -->
 			<p>La etiqueta Mark para <mark>resaltar texto</mark> remarcándolo</p>
 			<p>La etiqueta Mark para <mark style="background-color: red;">resaltar texto</mark> remarcándolo</p>
+
 		</article>
+
+		<article>
+			<h2>Meter </h2>				<!-- METER -->
+			Temperatura: 40º grados
+			<meter value="40" max="50" min="-20" high=35 low=12 optimum="20">
+				Tu navegador no soporta esta función.
+			</meter></br>
+			Temperatura: 25º grados <meter value="25" max="50" min="-20" high=35 low=12 optimum="20"></meter></br>
+			Temperatura: 15º grados <meter value="15" max="50" min="-20" high=35 low=12 optimum="20"></meter></br>
+			Temperatura: 10º grados <meter value="10" max="50" min="-20" high=35 low=12 optimum="20"></meter></br></br>
+		</article>
+
+		<article>
+			<h2>Output</h2>				<!-- OUTPUT -->
+			<form oninput="resultado.value=parseInt(edad.value) + parseInt(edad2.value)"> <!-- ParseInt: pasa el valor de la variable a número (sino lo toma como caracter) -->
+				Tu edad 
+				<input type="number" name="edad"></br>
+				Edad amigo
+				<input type="number" name="edad2"><br>
+				Suma de edades: <output name="resultado"></output><br><br>
+
+			</form>
+
+		</article>
+
+		<article>
+			<h2>Progress</h2>			<!-- PROGRESS -->
+			30%
+			<progress value="30" max="100">Tu navegador no soporta esta función.</progress><br>
+			80% <progress value="80" max="100"><br><br>
+
+		</article>
+
 		<aside>
 			<h2>textos secundarios</h2>
-			<p>Acá usamos Figure <figure>
+
+			<p>Acá usamos Figure 
+				<figure>			<!-- FIGURE -->
 				<img src="imagenes/cubo.png"/>
 				<figcaption>Cubo pixeleado.</figcaption>
 			</figure> y también el figcaption para describirla.
+
 			</p>
 		</br>
 
 
-			<p>Audio
+			<p>Audio 				<!-- AUDIO -->
 			<audio controls="controls" autoplay="autoplay" loop="loop" ><!-- preload="" auto, metadata, none -->
 				<source src="song.mp3" type="audio/mp3"/> <!-- IE / Safari -->
 				<source src="song.ogg" type="audio/ogg"/> <!-- Chrome, FF, Opera -->
