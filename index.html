@@ -86,6 +86,38 @@
 
 		</article>
 
+		<article>
+
+			<h2>Atributos</h2>			<!-- ATRIBUTOS -->
+			<table>
+				<tr >
+					<td style="width:150px">Draggable</td>
+					<td style="width:300px"><p draggable="true">Párrafo arrastrable</p></td>
+				</tr>
+				<tr>
+					<td>Contenteditable</td>
+					<td><p contenteditable="true">Párrafo editable</p></td>
+				</tr>
+				<tr>
+					<td>Hidden</td>
+					<td><p Hidden="true">Párrafo oculto</p></td>
+				</tr>
+				<tr>
+					<td>Spellcheck</td>
+					<td><p contenteditable="true" Spellcheck="true">Parrafo a corregir</p></td>
+				</tr>
+				
+			</table>
+			
+			
+			
+			 <br><br>
+			
+			
+			
+
+		</article>
+
 		<aside>
 			<h2>textos secundarios</h2>
 
@@ -99,11 +131,24 @@
 		</br>
 
 
-			<p>Audio 				<!-- AUDIO -->
+			<p>Audio <br>			<!-- AUDIO -->
 			<audio controls="controls" autoplay="autoplay" loop="loop" ><!-- preload="" auto, metadata, none -->
 				<source src="song.mp3" type="audio/mp3"/> <!-- IE / Safari -->
 				<source src="song.ogg" type="audio/ogg"/> <!-- Chrome, FF, Opera -->
 			</audio>
+			</p>
+
+			<p>Time <br>			<!-- TIME -->
+				La hora es: <time>14:00</time>
+				<time datetime="2022-10-11"></time>
+			</p>
+
+			<p>Video <br>			<!-- VIDEO -->
+				<video width="300" height="200" controls="controls" autoplay="autoplay" loop="loop"><!-- preload="" auto, metadata, none \\ muted="muted"  \\ poster="img.jpg"-->
+					<source src="video.mp4" type="video/mp4"/> <!-- IE / Safari -->
+					<source src="video.ogg" type="video/ogg"/> <!-- Chrome, FF, Opera -->
+				</video>
+
 			</p>
 		</aside>
 	</section>
